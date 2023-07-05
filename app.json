@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/classify/classify",
+    "pages/news/news",
+    "pages/detail/detail",
+    "pages/productDetail/productDetail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "巷子深茶文化馆",
+    "navigationBarTextStyle":"white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#4c4d4e",
+    "selectedColor": "#BDA066",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/images/home.png",
+        "selectedIconPath": "static/images/home-fill.png"
+      },{
+        "text": "分类",
+        "pagePath": "pages/classify/classify",
+        "iconPath": "static/images/all.png",
+        "selectedIconPath": "static/images/all-fill.png"
+      },{
+        "text": "资讯",
+        "pagePath": "pages/news/news",
+        "iconPath": "static/images/news.png",
+        "selectedIconPath": "static/images/news-fill.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "MyHeader":"components/MyHeader/MyHeader",
+    "NewsItem":"components/NewsItem/NewsItem",
+    "ProductItem":"components/ProductItem/ProductItem",
+    "van-icon": "@vant/weapp/icon/index",
+    "MyFooter":"components/MyFooter/MyFooter",
+    "van-loading": "@vant/weapp/loading/index",
+    "van-skeleton": "@vant/weapp/skeleton/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index"
+  }
+}

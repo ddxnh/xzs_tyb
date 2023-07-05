@@ -1,0 +1,15 @@
+<!-- 资讯的头部 -->
+<MyHeader></MyHeader>
+<!-- 资讯详细新闻 -->
+<view class="news">
+	<view class="container">
+		<view class="box" wx:for="{{newsArr}}" wx:key="_id">
+		<NewsItem item="{{item}}"></NewsItem>
+		</view>
+	</view>
+	<view class="more">
+	<van-loading size="24px" wx:if="{{isLoding}}">加载中...</van-loading>
+	<view class="nomore" wx:if="{{isData}}">没有更多数据了</view>
+	</view>
+</view>
+

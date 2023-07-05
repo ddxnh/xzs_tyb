@@ -1,0 +1,47 @@
+<MyHeader></MyHeader>
+
+<view style="padding:50rpx 30rpx; min-height: 50vh;" wx:if="{{isLoding}}">
+  <van-skeleton title row="5" />
+</view>
+
+<view class="detail" wx:else>
+  <view class="banner">
+    <image src="{{proList.picpath}}"></image>
+  </view>
+
+  <view class="textMain">
+    <view class="title">
+      {{proList.title}}
+    </view>
+
+    <view class="text">
+    
+        <view class="row">
+          <view class="left"><text space="emsp">货 号：</text></view>
+          <view class="right">{{proList.pronum}}</view>
+        </view>
+
+        <view class="row">
+          <view class="left"><text space="emsp">等 级：</text></view>
+          <view class="right">{{proList.grade}}</view>
+        </view>
+
+        <view class="row">
+          <view class="left"><text space="emsp">年 份：</text></view>
+          <view class="right">{{proList.year}}</view>
+        </view>
+
+        <view class="row">
+          <view class="left"><text space="emsp">净含量：</text></view>
+          <view class="right">{{proList.weight}}</view>
+        </view>
+
+        <view class="row">
+          <view class="left"><text space="emsp">零售价：</text></view>
+          <view class="right">{{proList.price}}</view>
+        </view>    
+    </view>
+  </view>
+</view>
+
+<MyFooter></MyFooter>

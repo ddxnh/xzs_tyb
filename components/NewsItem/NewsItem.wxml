@@ -1,0 +1,25 @@
+<navigator url="/pages/detail/detail?id={{item._id}}" class="item">
+<!-- 图片 -->
+	<view class="pic">
+		<image src="{{item.picurl}}" mode="aspectFill" class="img"/>
+	</view>
+	<view class="text">
+	<!-- 标题 -->
+		<view class="text_top">{{item.title}}</view>
+		<!-- 图标和文字 -->
+		<view class="text_bottom">
+		<view class="block">
+			<van-icon name="clock-o" size="14" class="vanIcon"/>
+			<text>{{item.publish_date}}</text>
+		</view>
+		<view class="block">
+			<van-icon name="eye-o" size="14" class="vanIcon"/>
+			<text>{{item.view_count}}</text>
+		</view>
+		<view class="block">
+			<van-icon name="user-o" size="14" class="vanIcon"/>
+			<text>{{item.author}}</text>
+		</view>
+		</view>
+	</view>
+</navigator>

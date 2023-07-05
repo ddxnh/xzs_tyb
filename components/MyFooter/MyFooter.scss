@@ -1,0 +1,59 @@
+.footer{
+	padding: 50rpx 0;
+	text-align: center;
+	background-color: var(--globalBgColor2);
+	border-top: 1px solid var(--themeColor);
+	font-size: 30rpx;
+	line-height: 1.8em;
+	color: var(--descColor);
+}
+.kefu{
+	width: 100rpx;
+	height: 100rpx;
+	background-color: var(--themeColor);
+	position: fixed;
+	bottom: 210rpx;
+	right: 60rpx;
+	border-radius: 50%;
+	box-shadow: 0 0 20rpx rgba(189,160,102,0.8);
+	.btn{
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		opacity: 0;
+		position: relative;
+		z-index: 1;
+	}
+	.pic{
+			width: 100rpx;
+			height: 100rpx;
+			.img{
+				width: 90%;
+				height: 90%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				margin: auto;
+			}
+	}
+	.line{
+		width: 100%;
+		height: 100%;
+		border: 3px solid var(--themeColor);
+		position: absolute;
+		top: 0;
+		left: 0;
+		border-radius: 50%;
+		animation: emit 1s infinite;
+	}
+}
+@keyframes emit{
+	0%{}
+	100%{
+		border-width: 1px;
+		opacity: 0;
+		transform: scale(1.5)
+	}
+}
